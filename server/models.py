@@ -17,6 +17,7 @@ class Hero(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     super_name = db.Column(db.String)
+    superpowers = db.Column(db.string(120),nullable=False)
 
     # add relationship
 
